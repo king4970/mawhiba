@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>برامج موهبة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .program {
+            margin-bottom: 10px;
+        }
+        
+        .program button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .program img {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100px; /* تعديل حجم الصورة حسب الحاجة */
+    z-index: 9999; /* ضمان ظهور الصورة فوق المحتوى الآخر */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>برامج موهبة</h1>
+    </header>
+
+    <main>
+        <div class="program">
+            <h2>البرنامج الوطني للكشف عن الموهوبين</h2>
+            <p>البرنامج الوطني للكشف عن الموهوبين هو برنامج يهدف إلى اكتشاف واختيار المواهب والموهوبين في مختلف المجالات والتخصصات. يتم تنفيذه في العديد من الدول حول العالم ويهتم بتطوير قدرات الأفراد الموهوبين وتوجيههم نحو التعليم والتدريب المناسب لتطوير مواهبهم وإمكاناتهم.
+</p>
+            <button onclick="openProgramDetails('national')">تفاصيل البرنامج</button>
+        </div>
+
+        <div class="program">
+            <h2>برامج موهبة الإثرائية</h2>
+            <p>برامج موهبة الإثرائية هي مجموعة من البرامج التعليمية المصممة لتلبية احتياجات وتطلعات الأفراد الموهوبين في المجالات المختلفة. تهدف هذه البرامج إلى توفير تحديات وفرص إضافية للموهوبين لتطوير قدراتهم ومهاراتهم في مجالات اهتمامه</p>
+            <button onclick="openProgramDetails('enrichment')">تفاصيل البرنامج</button>
+        </div>
+
+        <div class="program">
+            <h2>برنامج موهبة الإثرائي الأكاديمي</h2>
+            <p>برنامج موهبة الإثرائي الأكاديمي هو برنامج تعليمي مصمم خصيصًا لتلبية احتياجات وتطلعات الطلاب الموهوبين في المجالات الأكاديمية. يهدف هذا البرنامج إلى تقديم تحديات وفرص إضافية للموهوبين لتطوير مهاراتهم وتحصيلهم الأكاديمي في مجالات اهتمامهم.
+
+</p>
+            <button onclick="openProgramDetails('academic')">تفاصيل البرنامج</button>
+        </div>
+
+    </div>
+    <div class="program">
+        <img src="اليوم الخليجي.png" alt="اليوم الخليجي">
+    </div>
+</main>
+
+<footer>
+    تقديم الطالب: عماد يعقوب عبدالعال
+</footer>
+
+<script>
+    function openProgramDetails(programName) {
+        if (programName === 'gulf') {
+            // قم بتنفيذ الإجراءات المطلوبة لعرض تفاصيل البرنامج الخليجي هنا
+        } else {
+            window.open(programName + ".html");
+        }
+    }
+</script>
+</body>
+</html>
